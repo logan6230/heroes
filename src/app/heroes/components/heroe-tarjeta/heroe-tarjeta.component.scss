@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    height: 100%;
+}
+
+
+
+mat-card {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+::ng-deep {
+    .mat-card-header-text {
+        max-width: 100%;
+    }
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+mat-card-actions {
+    margin-top: auto;
+}
+
+mat-card-title,
+mat-card-subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
