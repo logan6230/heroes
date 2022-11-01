@@ -1,5 +1,16 @@
+<div fxLayout="row">
+    <div fxFlex="50">
+        <mat-form-field fxFlex="100">
+            <mat-label>Super Heore</mat-label>
+            <input matInput type="text" [(ngModel)]="heroe" required>
+        </mat-form-field>
+    </div>
+</div>
+
+<h1>Formulario dinamico</h1>
+
 <form [formGroup]="formGroup" (ngSubmit)="guardar()">
 
     <dynamic-material-form [group]="formGroup" [model]="formModel"></dynamic-material-form>
-         <button type="submit" >Guardar</button>                   
+    <button type="submit">Guardar</button>
 </form>

@@ -10,7 +10,7 @@ import { Heroe } from '../interfaces/heroes.interface';
 export class HeroesService {
 
   constructor(private http: HttpClient) { }
-  
+
   baseUrl: string = environment.baseUrl;
 
   getHeroes(): Observable<Heroe[]> {
